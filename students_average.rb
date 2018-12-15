@@ -10,9 +10,9 @@ def students_average
     students[:nota] = name[1..5]
     principalarray << students
   end
-  File.open('students_average.csv', 'w') do |file|
+  File.open('students_average.csv', 'w') do |files|
     principalarray.each do |var|
-      file.puts "#{var[:name]} = #{sum_of_notes(var[:nota]) / var[:nota].size}"
+      files.puts "#{var[:name]} = #{sum_of_notes(var[:nota]) / var[:nota].size}"
     end
   end
 end
@@ -27,5 +27,3 @@ def sum_of_notes(nota)
   end
   return suma.to_f
 end
-
-students_average
