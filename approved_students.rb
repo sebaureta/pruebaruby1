@@ -15,7 +15,7 @@ def approved_students(calif)
     calif = calif.to_f
     if approved >= calif
       puts "Alumno Aprobado: #{var[:name]}
-      con nota #{sum_approved(var[:nota]) / var[:nota].size}"
+      con nota #{sum_approved(var[:nota]) / var[:nota].size} \n"
     end
   end
 end

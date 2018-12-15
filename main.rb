@@ -12,17 +12,17 @@ while option != 4
 
   if option == 1
     students_average
-    puts "Se ha generado el archivo correctamente'\n'"
-    sleep(2)
+    puts "Se ha generado el archivo correctamente \n"
   elsif option == 2
     total_absenses
-    sleep(2)
   elsif option == 3
     puts 'Ingrese la nota de aprobación:'
     calif = gets.chomp.to_f
     approved_students(calif)
+  elsif option == 4
+    # Salida
   else
     puts 'Opcion inválida, favor ingrese nuevamente su opción'
-    sleep(2)
   end
+  sleep 2
 end
