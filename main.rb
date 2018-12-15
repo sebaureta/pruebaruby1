@@ -1,3 +1,5 @@
+require_relative 'students_average.rb'
+
 option = ''
 while option != 4
   puts '1: Generar archivo con el nombre de cada alumno y su promedio de notas'
@@ -8,7 +10,9 @@ while option != 4
   option = gets.to_i
 
   if option == 1
-    # metodo1
+    students_average
+    puts "Se ha generado el archivo correctamente'\n'"
+    sleep(2)
   elsif option == 2
     # metodo2
   elsif option == 3
