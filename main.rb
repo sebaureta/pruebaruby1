@@ -16,8 +16,9 @@ while option != 4
   elsif option == 2
     total_absenses
   elsif option == 3
-    puts 'Ingrese la nota de aprobación:'
-    calif = gets.chomp.to_f
+    puts 'Ingrese la nota de aprobación (Si no ingresa la nota será 5):'
+    calif = gets.chomp
+    calif = 5 if calif.empty?
     approved_students(calif)
   elsif option == 4
     # Salida
